@@ -1,0 +1,255 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#eee;
+    font-family: 'Lato', sans-serif;
+}
+li {
+    list-style: none;
+  }
+  
+a {
+    color: #000;
+    text-decoration: none;
+  }
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+#header{
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aqua;
+
+}
+
+.logo #img-header{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+/* @media (max-width: 650px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .logo #img-header {
+      margin: 0 auto;
+    }
+  } */
+
+.nav ul{
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+   justify-content: flex-end;
+}
+
+.nav li{
+    padding: 10px;
+}
+
+button {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 2px;
+    background: yellow;
+    cursor: pointer;
+  }
+  button:hover{
+      background: yellowgreen;
+  }
+
+
+.form{
+    text-align: center;
+    margin-top: 100px;
+}
+@media all and (max-width:650px){
+    .form{
+        margin-top: 100px;
+    }
+}
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#form input[type="email"]{
+    max-width:300px;
+    width: 100%;
+    height: 30px;
+}
+#form input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  #form input[type="submit"]:hover {
+    background-color: orange;
+    transition: background-color 1s;
+  }
+
+  #features {
+    margin-top: 40px;
+   
+  }
+
+ .grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+  
+  #features .left .fa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+   
+  }
+
+  #features .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+    
+  }
+
+  #howitworks{
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+  }
+
+  #howitworks iframe{
+      width:100%;
+      max-width:700px;
+  }
+
+  #pricing{
+      margin-top: 50px;
+  }
+
+  #pricing {
+   margin-top: 60px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+  }
+
+  .price-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20rem;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+
+  .price-card .title {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .price-card h2{
+      margin: 15px;
+  }
+
+  .price-card ol{
+      margin: 10px;
+  }
+
+  .price-card ol li{
+    margin: 10px;
+}
+
+.price-card .btn{
+    margin: 10px;
+}
+
+@media (max-width: 800px) {
+    #pricing {
+      flex-direction: column;
+    }
+    .price-card {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+
+#footer{
+    margin-top: 30px;
+    background:linear-gradient(35deg,#888888,#CCFFFF,#FFFF45);
+}
+
+#footer ol{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#footer ol li{
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#footer p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+ 
